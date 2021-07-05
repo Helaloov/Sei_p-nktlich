@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="242dp"
+        android:layout_height="266dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058">
+
+        <RadioButton
+            android:id="@+id/radio_Gehen"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="@string/gehen" />
+
+        <RadioButton
+            android:id="@+id/radio_Laufen"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:onClick="checkButton"
+            android:text="@string/laufen" />
+
+        <RadioButton
+            android:id="@+id/radio_Radfahren"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:onClick="checkButton"
+            android:text="@string/radfahren" />
+
+    </RadioGroup>
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="107dp"
+        android:layout_height="47dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/seco"
+        app:layout_constraintEnd_toStartOf="@+id/Cal"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="118dp"
+        android:layout_height="54dp"
+        android:text="@string/start"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <Button
+        android:id="@+id/Cal"
+        android:layout_width="110dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="76dp"
+
+        android:text="@string/trip_n_beenden"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/seco"
+        android:layout_width="141dp"
+        android:layout_height="81dp"
+        android:gravity="center_horizontal"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cal"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="266dp"
+        android:layout_height="32dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/voraussichtliche_ankunftszeit"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calc"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/editTextTime"
+        android:layout_width="137dp"
+        android:layout_height="62dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

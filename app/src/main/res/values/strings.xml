@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Helal</string>
+    <string name="gehen">Gehen</string>
+    <string name="laufen">Laufen</string>
+    <string name="radfahren">Radfahren</string>
+    <string name="start">Start</string>
+    <string name="trip_n_beenden">Trip \n beenden</string>
+    <string name="voraussichtliche_ankunftszeit">voraussichtliche Ankunftszeit :</string>
+</resources>
